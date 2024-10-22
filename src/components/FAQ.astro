@@ -1,0 +1,29 @@
+---
+const faqs = [
+  {
+    question: "Apakah ebook ini hanya untuk mahasiswa jenius?",
+    answer: "Tidak! Ebook ini dirancang untuk siapa saja yang ingin meningkatkan prestasi akademik, bahkan jika Anda merasa \"biasa saja.\""
+  },
+  {
+    question: "Apakah ebook ini benar-benar membantu saya meraih IP 4.0?",
+    answer: "Dengan strategi yang terbukti dan langkah-langkah praktis, Anda akan memiliki semua alat yang dibutuhkan untuk mencapai hasil luar biasa."
+  },
+  {
+    question: "Bagaimana cara saya mengunduh ebook setelah pembelian?",
+    answer: "Setelah melakukan pembayaran, Anda akan langsung menerima tautan untuk mengunduh ebook."
+  }
+];
+---
+<section class="py-12 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6">Pertanyaan yang Sering Diajukan</h2>
+    <div class="space-y-6">
+      {faqs.map(faq => (
+        <div>
+          <h3 class="font-bold mb-2">{faq.question}</h3>
+          <p>{faq.answer}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

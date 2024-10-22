@@ -1,0 +1,37 @@
+---
+const learnings = [
+  {
+    title: "Manajemen Waktu yang Efektif",
+    description: "Cara saya mengatur waktu sehingga saya bisa belajar secara produktif tanpa merasa kewalahan."
+  },
+  {
+    title: "Strategi Belajar yang Efisien",
+    description: "Metode saya dalam mempelajari materi secara lebih efektif tanpa harus menghabiskan waktu berjam-jam di meja belajar."
+  },
+  {
+    title: "Menjaga Keseimbangan Antara Hidup dan Studi",
+    description: "Bagaimana saya tetap menjaga keseimbangan antara studi dan kehidupan pribadi, tanpa merasa terbakar habis."
+  },
+  {
+    title: "Lingkungan yang Mendukung",
+    description: "Pentingnya menciptakan lingkungan belajar yang mendukung kesuksesan akademik."
+  },
+  {
+    title: "Motivasi dan Disiplin yang Konsisten",
+    description: "Cara menjaga motivasi dan disiplin, bahkan ketika tantangan terbesar muncul."
+  }
+];
+---
+<section class="py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6">Apa yang Akan Anda Pelajari dari Ebook Ini</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {learnings.map(item => (
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-bold text-lg mb-2">{item.title}</h3>
+          <p>{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

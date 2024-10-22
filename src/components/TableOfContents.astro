@@ -1,0 +1,20 @@
+---
+const chapters = [
+  "Pendahuluan",
+  "Bab 1: Menata Waktu Seperti Seorang Profesional",
+  "Bab 2: Rahasia Belajar Efektif",
+  "Bab 3: Menyeimbangkan Hidup dan Studi",
+  "Bab 4: Lingkungan dan Komunitas yang Mendukung",
+  "Bab 5: Menjaga Motivasi Hingga Akhir"
+];
+---
+<section class="py-12 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6">Daftar Isi</h2>
+    <ul class="list-disc list-inside">
+      {chapters.map(chapter => (
+        <li class="mb-2">{chapter}</li>
+      ))}
+    </ul>
+  </div>
+</section>
